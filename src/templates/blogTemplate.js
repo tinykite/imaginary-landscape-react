@@ -18,7 +18,7 @@ export default function Template({
       </div>
     </div>
   )
-}``
+}
 
 export const pageQuery = graphql`
   query($path: String!) {
