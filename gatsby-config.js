@@ -6,6 +6,7 @@
 
 module.exports = {
   plugins: [
+  `gatsby-plugin-postcss`,
   `gatsby-plugin-netlify-cms`,
   {
     resolve: `gatsby-source-filesystem`,
