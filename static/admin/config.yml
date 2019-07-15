@@ -6,12 +6,16 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
+  - name: podcasts
+    label: podcast
+    folder: podcasts
     create: true
     fields:
       - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { name: date, label: Date, widget: date }
+      - { name: year, label: year, widget: date, format: YYYY }
+      - { name: city, label: city, widget: string }
+      - { name: venue, label: venue, widget: string }
+      - { name: audioUrl, label: "audio url", widget: string }
       - { name: body, label: Body, widget: markdown }
